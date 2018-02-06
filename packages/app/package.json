@@ -1,0 +1,31 @@
+{
+  "name": "@sample/app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@sample/sibling1": "1.0.0",
+    "@sample/sibling2": "1.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.7.12",
+    "electron-builder": "^19.56.0"
+  },
+  "build": {
+    "appId": "com.sample.lerna-electron-builder",
+    "productName": "lerna-electron-builder-sample",
+    "nsis": {
+      "oneClick": true,
+      "perMachine": true
+    },
+    "files": [
+      "index.js"
+    ],
+    "asar": false
+  }
+}
